@@ -1,15 +1,18 @@
 module.exports = {
+  // mode: "jit",
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true
   },
-  purge: [],
+  purge: ["./**/*.vue"],
   theme: {
     extend: {
-      "plt-yellow": "#fab708",
-      "plt-white": "#eeeeee",
-      "plt-dark": "#333333",
-      "plt-darker": "#272727"
+      colors: {
+        "plt-yellow": "#fab708",
+        "plt-white": "#eeeeee",
+        "plt-dark": "#333333",
+        "plt-darker": "#272727"
+      }
     }
   },
   variants: {},
