@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full bg-plt-white">
     <app-header />
     <Nuxt />
     <app-footer />

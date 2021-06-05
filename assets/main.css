@@ -6,4 +6,9 @@
 }
 * {
   font-family: "vazir";
+  transition: all 200ms ease;
+  scroll-behavior: smooth;
+}
+.nice-shadow {
+  box-shadow: 18px 18px 30px 0px #c1c5ca, -18px -18px 30px 0px #fff;
 }
