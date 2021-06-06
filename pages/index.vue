@@ -2,7 +2,7 @@
   <div class="w-full">
     <div class="container mx-auto">
       <section
-        class="flex flex-col md:flex-row md:justify-between items-center py-10 xl:justify-around"
+        class="flex flex-col md:flex-row md:justify-between items-center py-16 xl:justify-around"
       >
         <div class="relative">
           <img
@@ -78,9 +78,44 @@
       </section>
       <sec-title text="خدمات من" />
       <section
-        class="flex flex-col md:flex-row md:justify-between items-center py-10 xl:justify-around"
+        class="flex flex-col md:flex-row md:justify-between items-center py-5 xl:justify-around"
       >
-        <img src="~/assets/svg/group2.svg" alt="svg group 1" class="">
+        <img
+          src="~/assets/svg/group2.svg"
+          alt="svg group 1"
+          class="mb-10 lg:hidden sm:w-1/2"
+        />
+        <img
+          src="~/assets/svg/group1.svg"
+          alt="svg group 1"
+          class="mb-10 hidden lg:block"
+        />
+        <div class="flex flex-col items-center">
+          <service />
+          <service />
+          <nuxt-link
+            to="/services"
+            class="py-2 px-5 mt-5 rounded-xl border-2 border-plt-yellow text-plt-yellow hover:text-plt-white hover:bg-plt-yellow"
+          >
+            مشاهده همه خدمات
+          </nuxt-link>
+        </div>
+      </section>
+      <sec-title text="آخرین مقالات" />
+      <section class="w-full">
+        <div class="flex flex-wrap justify-around items-center mt-10">
+          <post />
+          <post />
+          <post />
+        </div>
+        <div class="w-full flex items-center justify-center mb-16">
+          <nuxt-link
+          to="/blogs"
+          class="py-2 px-5 mt-10 mx-auto rounded-xl border-2 hover:border-plt-yellow hover:text-plt-yellow hover:bg-transparent text-plt-white bg-plt-yellow"
+        >
+          مشاهده همه مقالات
+        </nuxt-link>
+        </div>
       </section>
     </div>
   </div>
@@ -97,8 +132,8 @@ export default {};
 }
 @media screen and (min-width: 1024px) {
   .profile {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
   }
 }
 </style>
